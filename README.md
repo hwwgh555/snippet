@@ -1,2 +1,4 @@
 # snippet
-code snippets for efficient coding
+Code snippets for efficient coding.
+
+One file reresents one snipeet, and snippets are sort by directory.
