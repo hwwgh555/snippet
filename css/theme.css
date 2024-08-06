@@ -1,1 +1,66 @@
 /* 换肤变量 */
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --cn-c-blue: #3B82F6;
+  --cn-c-purple: #917FFB;
+  --cn-c-red: #F53F3E;
+  --cn-c-yellow: #FFA901;
+  --cn-c-green: #05C798;
+
+  --cn-c-black: #28292C;
+  --cn-c-black-soft: #3F4144;
+  --cn-c-black-mute: #8A94A6;
+
+  --cn-c-gray: #B0B7C3;
+  --cn-c-gray-soft: #CECFD1;
+  --cn-c-gray-mute: #E7E7E7;
+
+  --cn-c-white-mute: #f7f7f7;
+  --cn-c-white-soft: #F1F2F6;
+  --cn-c-white: #fff;
+
+  --cn-c-divider-light-1: var(--cn-c-gray-mute);
+  --cn-c-divider-light-2: var(--cn-c-gray-mute);
+  --cn-c-divider-dark-1: var(--cn-c-gray-mute);
+  --cn-c-divider-dark-2: var(--cn-c-gray-mute);
+
+  --cn-c-text-dark-1: var(--cn-c-black);
+  --cn-c-text-dark-2: var(--cn-c-soft);
+  --cn-c-text-dark-3: var(--cn-c-mute);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-heading: var(--cn-c-black);
+  --color-text: var(--cn-c-black-soft);
+  --color-sub-text: var(--cn-c-black-mute);
+  --color-tip-text: var(--cn-c-gray);
+
+  --color-primary: var(--cn-c-blue);
+  --color-background: var(--cn-c-blue);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-icon-hover: var(--cn-c-blue);
+  --color-icon: var(--cn-c-black-mute);
+
+  --color-border: var(--cn-c-gray-soft);
+  --color-border-hover: var(--cn-c-gray-soft);
+
+  --color-success: var(--cn-c-green);
+  --color-warning: var(--cn-c-yellow);
+  --color-error: var(--cn-c-red);
+
+  /* --section-gap: 160px; */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+    --color-background: var(--vt-c-black);
+
+    --color-border: var(--cn-c-gray-mute);
+    --color-border-hover: var(--cn-c-divider-dark-1);
+    --color-heading: var(--cn-c-text-dark-1);
+    --color-text: var(--cn-c-text-dark-2);
+  } */
+}
