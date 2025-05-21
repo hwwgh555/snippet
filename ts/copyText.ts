@@ -1,13 +1,15 @@
 const copyTextInDom = (dom) => {
   const range = document.createRange();
-
   range.selectNode(dom);
-  window?.getSelection().removeAllRanges();
-  window?.getSelection().addRange(range);
+  const selection = window?.getSelection();
+  if (selection) {
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
 
   return new Promise((resolve) => {
     document.execCommand('copy');
-    window.getSelection().removeAllRanges();
+    window?.getSelection()?.removeAllRanges();
     resolve(dom.innerText);
   })
 }
